@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install gittuf
-        uses: gittuf/gittuf-installer
+        uses: gittuf/gittuf-installer@main
 
       - name: Fetch gittuf refs
         run: git fetch origin "+refs/gittuf/*:refs/gittuf/*"
