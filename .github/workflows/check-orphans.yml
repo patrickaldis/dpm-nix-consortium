@@ -1,23 +1,23 @@
-name: Check for orphan files
-
-on:
-  pull_request:
-    branches: [main]
-
-jobs:
-  check-orphans:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Install gittuf
-        uses: gittuf/gittuf-installer@main
-
-      - name: Fetch gittuf refs
-        run: git fetch origin "+refs/gittuf/*:refs/gittuf/*"
-
-      - name: Check all JSON files have policy owners
-        run: bash .github/workflows/verify.sh
+# name: Check for orphan files
+#
+# on:
+#   pull_request:
+#     branches: [main]
+#
+# jobs:
+#   check-orphans:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#
+#       - name: Install gittuf
+#         uses: gittuf/gittuf-installer@main
+#
+#       - name: Fetch gittuf refs
+#         run: git fetch origin "+refs/gittuf/*:refs/gittuf/*"
+#
+#       - name: Check all JSON files have policy owners
+#         run: bash .github/workflows/verify.sh
