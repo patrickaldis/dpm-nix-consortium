@@ -1,0 +1,13 @@
+{
+  "org": {
+    "name": "Organisation B"
+  },
+  "members":[ 
+    {
+      "name": "Adriaan Leijnse",
+      "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMUgf+mHH85a2lwOpFmmFnK6jiy+Hzjl/LaGMxKc6zpG patrick@mary",
+      "from": "25/08/26",
+      "to": "25/08/27"
+    }
+  ]
+}
